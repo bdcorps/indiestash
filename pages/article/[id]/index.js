@@ -11,10 +11,10 @@ const article = ({ articles, title }) => {
   // console.log('g', articles[0].items[0].volumeInfo.title, title)
   return (
     <article>
-      <div className="max-w-xl mx-auto">
+      <div className="">
         <header className="pt-6 xl:pb-10">
           <dd class="text-base leading-6 font-medium text-gray-500"><time datetime="2021-02-16T16:05:00.000Z">Tuesday, Febuary 16, 2021</time></dd>
-          <h1 className="text-3xl leading-9 font-bold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+          <h1 className="mt-2 text-3xl leading-9 font-bold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
             Top 5 Psychology Books you should read in 2021
         </h1>
         </header>

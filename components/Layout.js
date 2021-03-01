@@ -1,8 +1,5 @@
-import styles from '../styles/Layout.module.css'
-import Nav from './Nav'
 import Meta from './Meta'
 import Header from './Header'
-import { Container } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -11,11 +8,11 @@ const Layout = ({ children }) => {
     <>
       <Meta />
       {/* <Nav /> */}
-      {/* <Header /> */}
+      <Header />
 
-      <Container>
+      <div className="max-w-xl mx-auto">
         {children}
-      </Container>
+      </div>
 
       {/* <div className={styles.container}>
         <main className={styles.main}>

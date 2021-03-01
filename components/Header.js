@@ -1,19 +1,20 @@
 import styles from '../styles/Header.module.css'
-import { Table, Col, Row, Jumbotron, Button, Container } from 'react-bootstrap';
+import Link from 'next/link'
 
 export const Header = () => {
   return (
-    <Jumbotron>
-      <Container className="text-center">
-        <h1>Discover with Music Station</h1>
-        <p>
-          Music Station allows you to discover new music with 3000+ pre-built playlists to help you find that perfect jam
-</p>
-        <p>
-          <Button variant="primary">Discover 100+ Rap Playlists</Button>
-        </p>
-      </Container>
-    </Jumbotron>
+    <header className="max-w-xl mx-auto flex justify-between items-center py-10">
+      <div>
+        <Link href="/">
+          <p>nerd_corner</p>
+        </Link>
+      </div>
+      <div className="text-base leading-5">
+        <a href="https://tailwindcss.com/docs" className="font-medium text-gray-500 hover:text-gray-700">
+          Documentation &rarr;
+        </a>
+      </div>
+    </header>
   )
 }
 
