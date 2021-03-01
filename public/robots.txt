@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sukh.com
+
+# Sitemaps
+Sitemap: https://sukh.com/sitemap.xml
