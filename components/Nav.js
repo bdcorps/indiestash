@@ -1,4 +1,4 @@
-import Link from 'next/Link'
+import Link from 'next/link'
 import styles from '../styles/Nav.module.css'
 
 export const Nav = () => {
