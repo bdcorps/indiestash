@@ -123,7 +123,7 @@ export const getStaticProps = async (context) => {
   const articles = getSongs(topic)
   console.log("props", context.params.id, topic, articles)
   const updatedAt = Date.UTC()
-  console.log(articles)
+  // console.log(articles)
   return { props: { articles, title } }
 }
 
