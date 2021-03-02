@@ -5,7 +5,7 @@ import { getSongs } from '../../api/articles/[id]'
 import { Table, Col, Row, Jumbotron, Button } from 'react-bootstrap'
 import Image from 'next/image'
 
-const article = ({ articles, title }) => {
+const article = ({ articles, title, updatedAt }) => {
   // const router = useRouter()
   // const { id } = router.query
   // console.log('g', articles[0].items[0].volumeInfo.title, title)
@@ -13,10 +13,10 @@ const article = ({ articles, title }) => {
     <article>
       <div className="">
         <header className="pt-6 xl:pb-10">
-          <dd class="text-base leading-6 font-medium text-gray-500"><time datetime="2021-02-16T16:05:00.000Z">Tuesday, Febuary 16, 2021</time></dd>
+          <dd className="text-base leading-6 font-medium text-gray-500"><time datetime="2021-02-16T16:05:00.000Z">Tuesday, Febuary 16, 2021</time></dd>
           <h1 className="mt-2 text-3xl leading-9 font-bold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
-            Top 5 Psychology Books you should read in 2021
-        </h1>
+            {title}
+          </h1>
         </header>
 
         <hr></hr>
@@ -37,18 +37,16 @@ const article = ({ articles, title }) => {
                 <div className="bg-gray-100 h-96 flex items-center justify-center">
                   <img
                     className="rounded-lg"
-                    src="http://books.google.com/books/content?id=Lw3fDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                    src={articles.items[0].volumeInfo.imageLinks.thumbnail}
                     alt=""
                   />
                 </div>
                 <h1 className="text-2xl font-bold text-gray-800">
-                  The Lean Startup
-        </h1>
+                  {articles.items[0].volumeInfo.title}
+                </h1>
                 <p className="text-lg text-gray-500">
-                  The Lean Startup provides a scientific approach to creating and
-                  managing startups and get a desired product to customers' hands
-                  faster.
-        </p>
+                  {articles.items[0].volumeInfo.description}
+                </p>
                 <a
                   className="transition-colors duration-200 hover:text-gray-800 text-lg"
                   href="/docs/object-fit"
@@ -58,7 +56,7 @@ const article = ({ articles, title }) => {
             </div>
 
             {/* <hr /> */}
-            <div className="post">
+            {/* <div className="post">
               <div className="pb-6 space-y-2">
                 <div className="bg-gray-100 h-96 flex items-center justify-center">
                   <img
@@ -81,7 +79,7 @@ const article = ({ articles, title }) => {
                 >View on Amazon<span aria-hidden="true" className="mr-2">→</span></a
                 >
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <!-- <div className="my-4 rounded-xl shadow-md overflow-hidden"> --> */}
@@ -124,6 +122,8 @@ export const getStaticProps = async (context) => {
   console.log("returning", topic)
   const articles = getSongs(topic)
   console.log("props", context.params.id, topic, articles)
+  const updatedAt = Date.UTC()
+  console.log(articles)
   return { props: { articles, title } }
 }
 

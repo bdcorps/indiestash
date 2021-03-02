@@ -6,11 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Layout = ({ children }) => {
   return (
     <>
-      <Meta />
-      {/* <Nav /> */}
-      <Header />
 
-      <div className="max-w-xl mx-auto">
+      <div className=" container max-w-xl mx-auto">
+        <Meta />
+        {/* <Nav /> */}
+        <Header />
         {children}
       </div>
 

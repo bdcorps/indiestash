@@ -3,16 +3,11 @@ import Link from 'next/link'
 
 export const Header = () => {
   return (
-    <header className="max-w-xl mx-auto flex justify-between items-center py-10">
-      <div>
+    <header className="max-w-xl mx-auto py-10">
+      <div className="text-center">
         <Link href="/">
-          <p>nerd_corner</p>
+          <a>nerd_corner</a>
         </Link>
-      </div>
-      <div className="text-base leading-5">
-        <a href="https://tailwindcss.com/docs" className="font-medium text-gray-500 hover:text-gray-700">
-          Documentation &rarr;
-        </a>
       </div>
     </header>
   )
