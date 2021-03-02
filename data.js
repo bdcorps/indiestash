@@ -103,7 +103,7 @@ export const articles = {
       }
     ]
   }],
-  copywriting: {
+  copywriting: [{
     kind: "books#volumes",
     totalItems: 1697,
     items: [
@@ -203,7 +203,7 @@ export const articles = {
         }
       }
     ]
-  }, startups: {
+  }], startups: [{
     kind: "books#volumes",
     totalItems: 1986,
     items: [
@@ -282,8 +282,8 @@ export const articles = {
         }
       }
     ]
-  },
-  bitcoin: {
+  }],
+  bitcoin: [{
     kind: "books#volumes",
     totalItems: 1220,
     items: [
@@ -364,8 +364,8 @@ export const articles = {
         }
       }
     ]
-  },
-  marketing: {
+  }],
+  marketing: [{
     kind: "books#volumes",
     totalItems: 2076,
     items: [
@@ -430,8 +430,8 @@ export const articles = {
         }
       }
     ]
-  },
-  business: {
+  }],
+  business: [{
     kind: "books#volumes",
     totalItems: 2733,
     items: [
@@ -534,8 +534,8 @@ export const articles = {
         }
       }
     ]
-  },
-  leadership: {
+  }],
+  leadership: [{
     kind: "books#volumes",
     totalItems: 2418,
     items: [
@@ -654,5 +654,5 @@ export const articles = {
         }
       }
     ]
-  }
+  }]
 }
