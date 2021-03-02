@@ -37,15 +37,15 @@ const article = ({ articles, title, updatedAt }) => {
                 <div className="bg-gray-100 h-96 flex items-center justify-center">
                   <img
                     className="rounded-lg"
-                    src={articles.items[0].volumeInfo.imageLinks.thumbnail}
+                    src={articles[0].items[0].volumeInfo.imageLinks.thumbnail}
                     alt=""
                   />
                 </div>
                 <h1 className="text-2xl font-bold text-gray-800">
-                  {articles.items[0].volumeInfo.title}
+                  {articles[0].items[0].volumeInfo.title}
                 </h1>
                 <p className="text-lg text-gray-500">
-                  {articles.items[0].volumeInfo.description}
+                  {articles[0].items[0].volumeInfo.description}
                 </p>
                 <a
                   className="transition-colors duration-200 hover:text-gray-800 text-lg"
