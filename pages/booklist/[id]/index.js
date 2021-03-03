@@ -13,7 +13,7 @@ const article = ({ articles, title, updatedAt }) => {
     <article>
       <div className="">
         <header className="pt-6 xl:pb-10">
-          <dd className="text-base leading-6 font-medium text-gray-500"><time datetime="2021-02-16T16:05:00.000Z">Tuesday, Febuary 16, 2021</time></dd>
+          <dd className="text-base leading-6 font-medium text-gray-500"><time dateTime="2021-02-16T16:05:00.000Z">Tuesday, Febuary 16, 2021</time></dd>
           <h1 className="mt-2 text-3xl leading-9 font-bold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
             {title}
           </h1>
@@ -33,25 +33,26 @@ const article = ({ articles, title, updatedAt }) => {
           <div className="space-y-12">
 
             <div className="post">
-              <div className="space-y-2">
-                <div className="bg-gray-100 h-96 flex items-center justify-center">
-                  <img
-                    className="rounded-lg"
-                    src={articles[0].items[0].volumeInfo.imageLinks.thumbnail}
-                    alt=""
-                  />
-                </div>
-                <h1 className="text-2xl font-bold text-gray-800">
-                  {articles[0].items[0].volumeInfo.title}
-                </h1>
-                <p className="text-lg text-gray-500">
-                  {articles[0].items[0].volumeInfo.description}
-                </p>
-                <a
-                  className="transition-colors duration-200 hover:text-gray-800 text-lg"
+              <div className="my-4">
+                <div className="space-y-2">
+                  <div className="bg-gray-100 h-96 flex items-center justify-center">
+                    <img
+                      className="rounded-lg"
+                      src={articles[0].items[0].volumeInfo.imageLinks.thumbnail}
+                      alt=""
+                    />
+                  </div>
+                  <h1 className="text-2xl font-bold text-gray-800">
+                    {articles[0].items[0].volumeInfo.title} by {articles[0].items[0].volumeInfo.authors[0]}
+                  </h1>
+                  <p className="text-gray-500">
+                    {articles[0].items[0].volumeInfo.description}
+                  </p></div>
+                <p><a
+                  className="transition-colors duration-200 hover:text-gray-800 mt-1"
                   href={articles[0].items[0].volumeInfo.infoLink}
-                >View on Google Books<span aria-hidden="true" className="mr-2">→</span></a
-                >
+                >View on Google Books <span aria-hidden="true" className="mr-2">→</span></a
+                ></p>
               </div>
             </div>
 
