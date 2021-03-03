@@ -132,7 +132,6 @@ const topics = ["psychology",
   "copywriting",
   "startups",
   "bitcoin",
-  "marketing",
   "business",
   "leadership"]
 
