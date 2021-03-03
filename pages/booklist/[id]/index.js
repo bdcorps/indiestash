@@ -49,8 +49,8 @@ const article = ({ articles, title, updatedAt }) => {
                 </p>
                 <a
                   className="transition-colors duration-200 hover:text-gray-800 text-lg"
-                  href="/docs/object-fit"
-                >View on Amazon<span aria-hidden="true" className="mr-2">→</span></a
+                  href={articles[0].items[0].volumeInfo.infoLink}
+                >View on Google Books<span aria-hidden="true" className="mr-2">→</span></a
                 >
               </div>
             </div>
