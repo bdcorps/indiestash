@@ -15,7 +15,7 @@ export default function Home({ articles }) {
 
         <Link href="/booklist/top-book-to-read-on-psychology-in-2021"><a className="bg-indigo-700 py-1 px-6 text-white rounded-3xl  m-3">Psychology</a></Link>
 
-        <Link href="/booklist/top-book-to-read-on-marketing-in-2021"><a className="bg-indigo-700 py-1 px-6 text-white rounded-3xl  m-3">Marketing</a></Link>
+        {/* <Link href="/booklist/top-book-to-read-on-marketing-in-2021"><a className="bg-indigo-700 py-1 px-6 text-white rounded-3xl  m-3">Marketing</a></Link> */}
 
         <Link href="/booklist/top-book-to-read-on-bitcoin-in-2021"><a className="bg-indigo-700 py-1 px-6 text-white rounded-3xl  m-3">Bitcoin</a></Link>
 
