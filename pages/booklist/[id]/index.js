@@ -21,14 +21,14 @@ const article = ({ articles, title, updatedAt }) => {
 
         <hr></hr>
         <div className="max-w-none">
-          <div className="">
+          {/* <div className="">
             <p className="text-gray-500 text-left">
               Life would be so much easier if our bundles of joy came bundled with a
               guide to proper care and maintenance. Fortunately for today’s moms and
               dads, these top books on parenting are the next best thing. So sit back,
               moms and dads, because your reading list just got a little longer!
     </p>
-          </div>
+          </div> */}
 
           <div className="space-y-12">
 
