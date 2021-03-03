@@ -22,9 +22,9 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-  title: "Webdev",
-  keywords: "webdev, programming",
-  description: "descirption"
+  title: "Nerd Corner: Curated list of useful books for indie founders",
+  keywords: "books, startups, business, copywriting, psychology, bitcoin, leadership, startups",
+  description: "Curated list of useful books for indie founders"
 }
 
 export default Meta
