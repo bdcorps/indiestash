@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap --config sitemap.js",
-    "start": "next start"
+    "start": "next start",
+    "generate": "node ./generator"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "next": "^10.0.7",
     "react": "17.0.1",

@@ -5,17 +5,31 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `<!-- Google Tag Manager -->
+              <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-5K7B7QP');</script>
+              <!-- End Google Tag Manager -->`
+            }}
+          />
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
 
         </Head>
         <body>
-          <Main />
-          <NextScript />
           <script
             dangerouslySetInnerHTML={{
-              __html: `(function(v,i,s,a){if(!v._visaSettings){v._visaSettings = {};}v._visaSettings["5515ce27-7a57-11eb-b589-901b0edac50a"]={v:"0.3",s:"5515ce27-7a57-11eb-b589-901b0edac50a",a:"1"};_v=i.getElementsByTagName("head")[0];_a=_v;_i=i.createElement("script");_s=_i;_s.defer="defer";_s.src=s+a+v._visaSettings["5515ce27-7a57-11eb-b589-901b0edac50a"].v;_a.appendChild(_s);})(window,document,"//app-worker.visitor-analytics.io/main",".js?s=5515ce27-7a57-11eb-b589-901b0edac50a&v=")`
+              __html: `<!-- Google Tag Manager (noscript) -->
+              <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K7B7QP"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+              <!-- End Google Tag Manager (noscript) -->`
             }}
           />
+          <Main />
+          <NextScript />
         </body>
       </Html>
     )

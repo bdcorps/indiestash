@@ -10,13 +10,6 @@ export default function handler({ query: { id } }, res) {
 }
 
 export const getSongs = (topic) => {
-  // if (!filter) { return filtered[0] }
-
   const filtered = articles[topic]
-  // console.log("looking up", topic, JSON.stringify(filtered))
-  // console.log("has to eb ", filtered)
-  // if (filtered.length === 0) {
-  //   return articles[0]
-  // }
   return filtered
 }
