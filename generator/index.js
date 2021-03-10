@@ -4,7 +4,7 @@ const axios = require('axios')
 const fs = require('fs');
 
 const Volumes = {
-  "generating-ideas": ["How to be a capitalist without any capital", "will it fly", "the art of creative thinking"], "doing-market-research": ["interviewing users", "the $100 startup", "build-better-products", "the mom test"],
+  "generating-ideas": ["How to be a capitalist without any capital", "will it fly", "the art of creative thinking", "side hustle chris"], "doing-market-research": ["interviewing users", "the $100 startup", "build-better-products", "the mom test"],
   "getting-first-100-customers": ["show your work", "the only thing that matters", "the lean startup", "the mom test"],
   "raising-funding": ["the art of the pitch", "mastering the vc game", "zero to sold", "confessions of a public speaker"]
 }
