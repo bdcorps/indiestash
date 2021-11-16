@@ -4,9 +4,11 @@ import { articles } from '../../../data'
 import { getSongs } from '../../api/articles/[id]'
 import { Table, Col, Row, Jumbotron, Button } from 'react-bootstrap'
 import Image from 'next/image'
+import Meta from '../../../components/Meta'
 
 const article = ({ articles, title, updatedAt }) => {
   return (<>
+    <Meta title={title} />
     <header className="pt-6 xl:pb-10">
       <dd className="text-base leading-6 font-medium text-gray-500"><time dateTime="2021-02-16T16:05:00.000Z">Tuesday, Febuary 16, 2021</time></dd>
       <h1 className="mt-2 text-3xl leading-9 font-bold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
@@ -24,14 +26,6 @@ const article = ({ articles, title, updatedAt }) => {
           <article >
             <div className="">
               <div className="max-w-none">
-                {/* <div className="">
-        <p className="text-gray-500 text-left">
-          Life would be so much easier if our bundles of joy came bundled with a
-          guide to proper care and maintenance. Fortunately for today’s moms and
-          dads, these top books on parenting are the next best thing. So sit back,
-          moms and dads, because your reading list just got a little longer!
-</p>
-      </div> */}
 
                 <div className="space-y-12">
 
