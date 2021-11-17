@@ -6,7 +6,7 @@
     "dev": "next dev -p 3007",
     "build": "next build",
     "postbuild": "next-sitemap --config sitemap.js",
-    "start": "next start",
+    "start": "next start -p 3007",
     "generate": "node ./generator"
   },
   "dependencies": {
