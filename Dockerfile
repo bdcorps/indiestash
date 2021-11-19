@@ -13,6 +13,9 @@ COPY . /usr/src
 # install dependencies
 RUN npm install
 
+
+RUN ["sleep", "300"]
+
 # start app
 RUN npm run build
 EXPOSE 3007
