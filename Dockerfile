@@ -14,9 +14,9 @@ COPY . /usr/src
 RUN npm install
 
 
-RUN ["sleep", "300"]
+CMD ["sleep", "300"]
 
 # start app
-RUN npm run build
-EXPOSE 3007
-CMD npm run start
+# RUN npm run build
+# EXPOSE 3007
+# CMD npm run start
