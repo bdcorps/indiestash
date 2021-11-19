@@ -1,7 +1,7 @@
 # Dockerfile
 
 # base image
-FROM node:alpine
+FROM node:14-alpine
 
 # create & set working directory
 RUN mkdir -p /usr/src
@@ -13,10 +13,6 @@ COPY . /usr/src
 # install dependencies
 RUN npm install
 
-
-CMD ["sleep", "300"]
-
-# start app
-# RUN npm run build
-# EXPOSE 3007
-# CMD npm run start
+RUN npm run build
+EXPOSE 3007
+CMD npm run start
