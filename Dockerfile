@@ -40,4 +40,4 @@ ENV PORT 3007
 # Uncomment the following line in case you want to disable telemetry.
 # ENV NEXT_TELEMETRY_DISABLED 1
 
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
