@@ -6,7 +6,7 @@ export const Header = () => {
     <header className="max-w-xl mx-auto py-10">
       <div className="text-center">
         <Link href="/">
-          <a>nerd_corner</a>
+          <a>indie_stash</a>
         </Link>
       </div>
     </header>

@@ -22,7 +22,7 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-  title: "Nerd Corner: Curated list of useful books for indie founders",
+  title: "Indie Stash: Curated list of useful books for indie founders",
   keywords: "books, startups, business, copywriting, psychology, bitcoin, leadership, startups",
   description: "Curated list of useful books for indie founders"
 }
