@@ -4,10 +4,12 @@ const axios = require('axios')
 const fs = require('fs');
 
 const Volumes = {
-  "generating-ideas": ["How to be a capitalist without any capital", "will it fly", "the art of creative thinking", "side hustle chris"], "doing-market-research": ["interviewing users", "the $100 startup", "build-better-products", "the mom test"],
-  "getting-first-100-customers": ["show your work", "the only thing that matters", "the lean startup", "the mom test"],
-  "raising-funding": ["the art of the pitch", "mastering the vc game", "zero to sold", "confessions of a public speaker"]
+  "generating-ideas": ["The Personal MBA", "How to be a Capitalist without any Capital by Nathan Latka", "The $100 Startup", "The Consulting Bible by Alan Weiss", "How I built this by Guy Raz", "Will it fly?", "Zero to One", "The Tipping Point: How Little Things Can Make a Big Difference", "The Innovator's DNA", "Made to Stick: Why Some Ideas Survive and Others Die"],
 }
+
+// "doing-market-research": ["interviewing users", "the $100 startup", "build-better-products", "the mom test"],
+//   "getting-first-100-customers": ["show your work", "the only thing that matters", "the lean startup", "the mom test"],
+//   "raising-funding": ["the art of the pitch", "mastering the vc game", "zero to sold", "confessions of a public speaker"]
 
 const books = {}
 const saveBooks = async () => {

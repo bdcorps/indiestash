@@ -19,8 +19,11 @@ const article = ({ articles, title, updatedAt }) => {
     {articles.map(article => {
       const thumbnail = article.volumeInfo.imageLinks.thumbnail
       const title = article.volumeInfo.title
-      const description = article.volumeInfo.description.replace(/<[^>]*>?/gm, '')
-      const authors = article.volumeInfo.authors[0]
+
+      const desc = article.volumeInfo.description.replace(/<[^>]*>?/gm, '').split(" ");
+      const descriptionLength = Math.min(50, desc.length)
+      const description = desc.slice(0, descriptionLength).join(' ') + "..."
+      const authors = article.volumeInfo.authors.join(', ')
       return (
         <div key={article.id}>
           <article >
