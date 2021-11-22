@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { articles } from '../../../data'
-import { getSongs } from '../../api/articles/[id]'
+import { articles } from '../data'
+import { getSongs } from './api/articles/[id]'
 import { Table, Col, Row, Jumbotron, Button } from 'react-bootstrap'
 import Image from 'next/image'
-import Meta from '../../../components/Meta'
+import Meta from '../components/Meta'
 
 const article = ({ articles, title, updatedAt }) => {
   return (<>

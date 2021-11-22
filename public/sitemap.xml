@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url><loc>https://sukh.com</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
 <url><loc>https://sukh.com/about</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
-<url><loc>https://sukh.com/booklists/top-4-books-to-read-on-generating-ideas-for-your-startup-in-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
-<url><loc>https://sukh.com/booklists/top-4-books-to-read-on-doing-market-research-for-your-startup-in-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
-<url><loc>https://sukh.com/booklists/top-4-books-to-read-on-getting-first-100-customers-for-your-startup-in-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
-<url><loc>https://sukh.com/booklists/top-4-books-to-read-on-raising-funding-for-your-startup-in-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
+<url><loc>https://sukh.com/top-4-books-to-read-on-generating-ideas-for-your-startup-in-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
+<url><loc>https://sukh.com/top-4-books-to-read-on-doing-market-research-for-your-startup-in-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
+<url><loc>https://sukh.com/top-4-books-to-read-on-getting-first-100-customers-for-your-startup-in-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
+<url><loc>https://sukh.com/top-4-books-to-read-on-raising-funding-for-your-startup-in-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-11-19T03:17:09.965Z</lastmod></url>
 </urlset>
