@@ -1,8 +1,8 @@
-import { articles } from '../data'
-import { getSongs } from './api/articles/[id]'
+import { booklists } from '../data'
+import { getBooklists } from './api/booklists/[id]'
 import Meta from '../components/Meta'
 
-const article = ({ articles, title, updatedAt }) => {
+const article = ({ booklists, title, updatedAt }) => {
   return (<>
     <Meta title={title} />
     <header className="pt-6 xl:pb-10">
@@ -12,16 +12,16 @@ const article = ({ articles, title, updatedAt }) => {
       </h1>
     </header>
     <hr />
-    {articles.map(article => {
-      const thumbnail = article.volumeInfo.imageLinks.thumbnail
-      const title = article.volumeInfo.title
+    {booklists.map(booklist => {
+      const thumbnail = booklist.volumeInfo.imageLinks.thumbnail
+      const title = booklist.volumeInfo.title
 
-      const desc = article.volumeInfo.description.replace(/<[^>]*>?/gm, '').split(" ");
+      const desc = booklist.volumeInfo.description.replace(/<[^>]*>?/gm, '').split(" ");
       const descriptionLength = Math.min(50, desc.length)
       const description = desc.slice(0, descriptionLength).join(' ') + "..."
-      const authors = article.volumeInfo.authors.join(', ')
+      const authors = booklist.volumeInfo.authors.join(', ')
       return (
-        <div key={article.id}>
+        <div key={booklist.id}>
           <article >
             <div className="">
               <div className="max-w-none">
@@ -46,7 +46,7 @@ const article = ({ articles, title, updatedAt }) => {
                         </p></div>
                       <p><a
                         className="transition-colors duration-200 hover:text-gray-800"
-                        href={article.volumeInfo.infoLink}
+                        href={booklist.volumeInfo.infoLink}
                       >View on Google Books <span aria-hidden="true" className="mr-2">→</span></a></p>
                     </div>
                   </div>
@@ -73,12 +73,12 @@ export const getStaticProps = async (context) => {
   let title = context.params.id.replace(/-/g, " ").split(" ")
   title = title.map(w => w.charAt(0).toUpperCase() + w.substring(1)).join(' ')
   const topic = tokenize(context.params.id)
-  const articles = getSongs(topic)
+  const booklists = getBooklists(topic)
   const updatedAt = Date.UTC()
-  return { props: { articles, title, updatedAt } }
+  return { props: { booklists, title, updatedAt } }
 }
 
-const topics = Object.keys(articles)
+const topics = Object.keys(booklists)
 
 
 function buildSearchPath(topic) {
@@ -89,7 +89,7 @@ function buildSearchPath(topic) {
 }
 
 function generateAllPaths() {
-  let paths = Object.keys(articles)
+  let paths = Object.keys(booklists)
   paths = paths.map((topic => buildSearchPath(topic)))
 
   return paths

@@ -1,7 +1,7 @@
-import { articles } from '../../../data'
+import { booklists } from '../../../data'
 
 export default function handler({ query: { id } }, res) {
-  const filtered = getSongs(null)
+  const filtered = getBooklists(null)
   if (filtered.length > 0) {
     res.status(200).json(filtered[0])
   } else {
@@ -9,7 +9,7 @@ export default function handler({ query: { id } }, res) {
   }
 }
 
-export const getSongs = (topic) => {
-  const filtered = articles[topic]
+export const getBooklists = (topic) => {
+  const filtered = booklists[topic]
   return filtered
 }

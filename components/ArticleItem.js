@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import styles from '../styles/Article.module.css'
 
-const ArticleItem = ({ article }) => {
+const ArticleItem = ({ booklist }) => {
   return (
-    <Link href="/article/[id]" as={`/article/${article.id}`}>
+    <Link href="/booklist/[id]" as={`/booklist/${booklist.id}`}>
       <a className={styles.card} href="">
         <h3>
-          {article.title} &rarr;
+          {booklist.title} &rarr;
         </h3>
-        <p>{article.title} </p>
+        <p>{booklist.title} </p>
       </a>
     </Link >
   )

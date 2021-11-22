@@ -1,1 +1,1 @@
-export const articles = require("./generator/data.json")
+export const booklists = require("./generator/data.json")

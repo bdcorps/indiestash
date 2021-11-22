@@ -1,10 +1,10 @@
 import ArticleItem from './ArticleItem'
 import styles from '../styles/Article.module.css'
 
-const ArticleList = ({ articles }) => {
+const ArticleList = ({ booklists }) => {
   return (
     <div className={styles.grid}>
-      {articles.map(article => (<ArticleItem article={article}></ArticleItem>))}
+      {booklists.map(booklist => (<ArticleItem booklist={booklist}></ArticleItem>))}
     </div>
   )
 }
