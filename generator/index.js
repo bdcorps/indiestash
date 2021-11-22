@@ -16,7 +16,7 @@ const saveBooks = async () => {
   for (const key in Volumes) {
     let booksInCategory = []
     for (const bookTitle of Volumes[key]) {
-      const volume = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=AIzaSyBnRqncd8WcJsBDMBEoZ9_-jYLraA7A268&maxResults=1`)
+      const volume = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=AIzaSyAfiNtF2O5kpcz_OKdktga0oCMLIrkY8LE&maxResults=1`)
 
       const { data } = volume
 
@@ -30,7 +30,7 @@ const saveBooks = async () => {
     books[key] = booksInCategory
   }
 
-  fs.writeFileSync('data.json', JSON.stringify(books));
+  fs.writeFileSync('./generator/data.json', JSON.stringify(books));
 }
 
 saveBooks()
