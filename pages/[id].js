@@ -1,8 +1,8 @@
 import { booklists } from '../data'
 import { getBooklists } from './api/booklists/[id]'
 // import Meta from '../components/Meta'
-import { NextSeo } from 'next-seo';
 import { ArticleJsonLd } from 'next-seo';
+import { NextSeo } from 'next-seo';
 import * as moment from 'moment';
 
 
