@@ -25,7 +25,7 @@ const Meta = ({ title, keywords, description }) => {
       <meta property="og:description" content={title} />
       <meta property="og:type" content="article" />
       {/* <meta property="og:url" content={window.location.href} /> */}
-      <meta property="og:image" content="https://flaviocopes.com/img/avatar.png" />
+      {/* <meta property="og:image" content="https://flaviocopes.com/img/avatar.png" /> */}
 
       <title>{title}</title>
     </Head>

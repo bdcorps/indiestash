@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <>
 
       <div className=" container max-w-xl mx-auto">
-        <Meta />
+        {/* <Meta /> */}
         {/* <Nav /> */}
         <Header />
         {children}
