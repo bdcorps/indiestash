@@ -1,9 +1,8 @@
-import ArticleList from '../components/ArticleList'
-import { server } from '../config'
-import Link from 'next/link'
-import { articles } from '../data'
 
-const topics = Object.keys(articles)
+import Link from 'next/link'
+import { booklists } from '../data'
+
+const topics = Object.keys(booklists)
 
 export default function Home() {
   console.log(topics)
