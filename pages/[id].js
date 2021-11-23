@@ -82,7 +82,7 @@ const topics = Object.keys(booklists)
 
 
 function buildSearchPath(topic) {
-  let path = `top 4 books to read on ${topic} for your startup in 2021`
+  let path = `top 10 books to read on ${topic} for your startup in 2022`
   path = path.replace(/ /g, "-")
 
   return path;
