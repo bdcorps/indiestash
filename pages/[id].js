@@ -13,10 +13,10 @@ const article = ({ booklists, title, updatedAt }) => {
     </header>
     <hr />
     {booklists.map(booklist => {
-      const thumbnail = booklist.volumeInfo.imageLinks.thumbnail
+      const thumbnail = booklist.volumeInfo.imageLinks?.thumbnail
       const title = booklist.volumeInfo.title
 
-      const desc = booklist.volumeInfo.description.replace(/<[^>]*>?/gm, '').split(" ");
+      const desc = booklist.volumeInfo.description?.replace(/<[^>]*>?/gm, '').split(" ") || [""];
       const descriptionLength = Math.min(50, desc.length)
       const description = desc.slice(0, descriptionLength).join(' ') + "..."
       const authors = booklist.volumeInfo.authors.join(', ')
@@ -33,7 +33,7 @@ const article = ({ booklists, title, updatedAt }) => {
                       <div className="space-y-2">
                         <div className="bg-gray-100 h-96 flex items-center justify-center">
                           <img
-                            className="rounded-lg"
+                            className="rounded-lg h-60"
                             src={thumbnail}
                             alt={`Book cover thumbnail for ${title} by ${authors}`}
                           />
