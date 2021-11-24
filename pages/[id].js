@@ -4,7 +4,7 @@ import { getBooklists } from './api/booklists/[id]'
 import { ArticleJsonLd } from 'next-seo';
 import { NextSeo } from 'next-seo';
 import * as moment from 'moment';
-
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const article = ({ booklists, title, updatedAt }) => {
   let url = ""
@@ -13,6 +13,8 @@ const article = ({ booklists, title, updatedAt }) => {
   }
 
   const allImages = booklists.map(i => i.volumeInfo.imageLinks?.thumbnail).filter(i => !!i);
+
+  const booksAsAFormattedString = title + "\n" + booklists.map(i => "- " + i.volumeInfo.title).join("\n") + "\nSource: " + url
 
   return (<>
     {/* <Meta title={title} /> */}
@@ -53,12 +55,19 @@ const article = ({ booklists, title, updatedAt }) => {
       description={title}
     />
 
-
     <header className="pt-6 xl:pb-10">
       <dd className="text-base leading-6 font-medium text-gray-500"><time dateTime="2021-02-16T16:05:00.000Z">Tuesday, Febuary 16, 2021</time></dd>
       <h1 className="mt-2 text-3xl leading-9 font-bold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
         {title}
       </h1>
+      <div className="flex justify-around mt-6">
+        <CopyToClipboard text={booksAsAFormattedString}
+          onCopy={null}>
+          <button>Copy to clipboard</button>
+        </CopyToClipboard>
+        <span>&#183;</span> <a href={`https://www.facebook.com/dialog/send?app_id=615944372941156&link=${url}&redirect_uri=https://saasbase.dev/products/indiestash}`}>Share on Messenger</a><span>&#183;</span>
+        <a href={`http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&source=saasbase.dev`}>Share to Linkedin</a></div>
+
     </header>
     <hr />
     {booklists.map(booklist => {
