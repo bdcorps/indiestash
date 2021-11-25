@@ -13,12 +13,9 @@ const article = ({ booklists, title, updatedAt }) => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setURL(window.location.href);
+      console.log(url)
     }
   });
-
-
-
-  console.log({ url })
 
   const allImages = booklists.map(i => i.volumeInfo.imageLinks?.thumbnail).filter(i => !!i);
 
@@ -73,7 +70,7 @@ const article = ({ booklists, title, updatedAt }) => {
           onCopy={null}>
           <button>Copy to clipboard</button>
         </CopyToClipboard>
-        <span>&#183;</span> <a href={`https://www.facebook.com/dialog/send?app_id=615944372941156&link=${url}&redirect_uri=https://saasbase.dev/products/indiestash}`}>Share on Messenger</a><span>&#183;</span>
+        <span>&#183;</span> <a href={`https://www.facebook.com/dialog/send?app_id=615944372941156&link=${url}&redirect_uri=https://saasbase.dev/products/indiestash`}>Share on Messenger</a><span>&#183;</span>
         <a href={`http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&source=https://saasbase.dev`}>Share to Linkedin</a></div>
 
     </header>
