@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://sukh.com
+Host: https://saasbase.dev
 
 # Sitemaps
-Sitemap: https://sukh.com/sitemap.xml
+Sitemap: https://saasbase.dev/sitemap.xml

@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://sukh.com',
+  siteUrl: 'https://saasbase.dev',
   generateRobotsTxt: true
 }
