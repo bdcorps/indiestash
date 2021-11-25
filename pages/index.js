@@ -43,7 +43,7 @@ export default function Home() {
           return <Link href={`/top-10-books-to-read-on-${topic}-for-your-startup-in-2022`}><a className="bg-indigo-700 py-1 px-6 text-white rounded-3xl m-2">{formattedTitle}</a></Link>
         })}
       </div>
-      <a className="text-indigo-700 fixed bottom-0 left-1/2 -ml-6 pb-4" href="https://saasbase.dev">Created by SaaSBase</a>
+
     </div>
   )
 }

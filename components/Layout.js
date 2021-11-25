@@ -12,6 +12,9 @@ const Layout = ({ children }) => {
         {/* <Nav /> */}
         <Header />
         {children}
+        <div className="text-center">
+          <button className="text-indigo-700 my-2 underline" href="https://saasbase.dev/generate-10x-seo-trafffic-from-google-using-next-js-full-tutorial/">This app runs pretty fast eh? Check out how it was made</button>
+        </div>
       </div>
 
       {/* <div className={styles.container}>
