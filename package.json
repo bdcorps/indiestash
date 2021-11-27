@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "indiestash",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,26 +10,27 @@
     "generate": "node ./generator"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
+    "axios": "^0.24.0",
+    "bootstrap": "^5.1.3",
     "moment": "^2.29.1",
-    "next": "^10.0.7",
+    "next": "^12.0.4",
+    "next-plausible": "^3.1.4",
     "next-seo": "^4.28.1",
-    "react": "17.0.1",
-    "react-bootstrap": "^1.5.0",
+    "react": "17.0.2",
+    "react-bootstrap": "^2.0.2",
     "react-copy-to-clipboard": "^5.0.4",
-    "react-dom": "17.0.1",
+    "react-dom": "17.0.2",
     "tailwindcss-aspect-ratio": "^3.0.0"
   },
   "devDependencies": {
-    "@sergeymyssak/nextjs-sitemap": "^1.1.1",
-    "@tailwindcss/typography": "^0.4.0",
-    "autoprefixer": "^10.2.4",
-    "globby": "^11.0.2",
-    "next-sitemap": "^1.5.8",
-    "postcss": "^8.2.6",
-    "prettier": "^2.2.1",
-    "stylelint-config-recommended": "^3.0.0",
-    "tailwindcss": "^2.0.3"
+    "@sergeymyssak/nextjs-sitemap": "^2.0.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.4.0",
+    "globby": "^12.0.2",
+    "next-sitemap": "^1.6.203",
+    "postcss": "^8.4.3",
+    "prettier": "^2.5.0",
+    "stylelint-config-recommended": "^6.0.0",
+    "tailwindcss": "^2.2.19"
   }
 }

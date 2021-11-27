@@ -13,7 +13,6 @@ const article = ({ booklists, title, updatedAt }) => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setURL(window.location.href);
-      console.log(url)
     }
   });
 
@@ -68,10 +67,10 @@ const article = ({ booklists, title, updatedAt }) => {
       <div className="flex justify-around mt-6">
         <CopyToClipboard text={booksAsAFormattedString}
           onCopy={null}>
-          <button>Copy to clipboard</button>
+          <button onClick={() => plausible('share', { props: { type: "clipboard" } })} >Copy to clipboard</button>
         </CopyToClipboard>
-        <span>&#183;</span> <a href={`https://www.facebook.com/dialog/send?app_id=615944372941156&link=${url}&redirect_uri=https://saasbase.dev/products/indiestash`}>Share on Messenger</a><span>&#183;</span>
-        <a href={`http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&source=https://saasbase.dev`}>Share to Linkedin</a></div>
+        <span>&#183;</span> <a onClick={() => plausible('share', { props: { type: "messenger" } })} href={`https://www.facebook.com/dialog/send?app_id=615944372941156&link=${url}&redirect_uri=https://saasbase.dev/products/indiestash`}>Share on Messenger</a><span>&#183;</span>
+        <a onClick={() => plausible('share', { props: { type: "linkedin" } })} href={`http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}&source=https://saasbase.dev`}>Share to Linkedin</a></div>
 
     </header>
     <hr />
