@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://saasbase.dev
-
-# Sitemaps
-Sitemap: https://saasbase.dev/sitemap.xml

@@ -15,6 +15,7 @@ class MyDocument extends Document {
             }}
           />
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+          <link rel="shortcut icon" href="/favicon.png" />
 
         </Head>
         <body>
