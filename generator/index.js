@@ -1,7 +1,10 @@
 'use strict';
 
+require('dotenv').config()
 const axios = require('axios')
 const fs = require('fs');
+
+const GOOGLE_BOOKS_API_KEY = process.env.GOOGLE_BOOKS_API_KEY;
 
 const Volumes = {
   "getting-first-100-customers": ["The Minimalist Entrepreneur by Sahil Lavingia",
@@ -85,7 +88,7 @@ const saveBooks = async () => {
   for (const key in Volumes) {
     let booksInCategory = []
     for (const bookTitle of Volumes[key]) {
-      const volume = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=AIzaSyAfiNtF2O5kpcz_OKdktga0oCMLIrkY8LE&maxResults=1`)
+      const volume = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=${GOOGLE_BOOKS_API_KEY}&maxResults=1`)
 
       const { data } = volume
 
