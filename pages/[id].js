@@ -136,7 +136,7 @@ export const getStaticProps = async (context) => {
   title = title.map(w => w.charAt(0).toUpperCase() + w.substring(1)).join(' ')
   const topic = tokenize(context.params.id)
   const booklists = getBooklists(topic)
-  const updatedAt = Date.UTC()
+  const updatedAt = Date.now()
   return { props: { booklists, title, updatedAt } }
 }
 
