@@ -7,6 +7,7 @@ const fs = require('fs');
 const GOOGLE_BOOKS_API_KEY = process.env.GOOGLE_BOOKS_API_KEY;
 
 const Volumes = {
+  "generating-ideas": ["The Personal MBA", "How to be a Capitalist without any Capital by Nathan Latka", "The $100 Startup", "The Consulting Bible by Alan Weiss", "How I built this by Guy Raz", "Will it fly?", "Zero to One", "The Innovator's DNA", "Made to Stick: Why Some Ideas Survive and Others Die"],
   "getting-first-100-customers": ["The Minimalist Entrepreneur by Sahil Lavingia",
     "Lean B2B: Build Products Businesses Want",
     "The Mom Test",
