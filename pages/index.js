@@ -35,7 +35,7 @@ export default function Home() {
         }}
       />
       <h1 className="text-5xl font-bold text-center text-gray-700">Curated list of useful books for indie founders</h1>
-      <div className="flex flex-wrap my-6">
+      <div className="flex flex-wrap my-6 justify-center">
 
         {topics.map(topic => {
           const formattedTitle = topic.split('-').map(i => capitalizeFirstLetter(i)).join(' ')
